@@ -1,0 +1,957 @@
+ :root {
+     --color: #000000;
+     --seccolor: #151515;
+     --hover: #c59cff;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Open-Sans', sans-serif;
+
+
+ }
+
+ body {
+     width: 100%;
+     background: var(--color);
+ }
+
+ /* Navigation bar  */
+
+
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 25px;
+     background: transparent;
+     top: 0;
+
+ }
+
+ .nav-element a:hover {
+     color: var(--hover);
+
+ }
+
+ .logo a {
+     color: #ffffff;
+     font-size: 25px;
+     font-weight: 700;
+     text-decoration: none;
+ }
+
+
+ .nav-element a {
+     color: #ffffff;
+     text-decoration: none;
+     padding: 15px;
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+
+ /* Introduction section */
+
+
+
+
+ .home {
+     padding-top: 25px;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     background-color: rgba(0, 0, 0, 0.3);
+     background-blend-mode: overlay;
+    
+     position: relative;
+ }
+
+ #backvid {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     object-fit: cover;
+     pointer-events: none;
+     z-index: -1;
+ }
+
+
+
+ .intro {
+     margin: 140px;
+     padding-top: 110px;
+     text-align: center;
+
+ }
+
+ .intro h1 {
+     font-size: 50px;
+     font-weight: 700;
+     color: #ffffff;
+     text-decoration: solid;
+
+ }
+
+ .intro p {
+     padding: 10px 0px;
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+ }
+
+ span {
+     color: rgb(245, 243, 243);
+     font-weight: 600;
+ }
+
+
+ /* Superhero section */
+
+ .superheros {
+     padding: 30px;
+     width: 100%;
+     background: var(--color);
+ }
+
+ .superheros h2 {
+     font-size: 70px;
+     text-decoration: overline;
+     color: #ffffff;
+ }
+
+ .hero-container {
+     display: flex;
+     padding: 20px;
+     margin: 20px;
+     text-align: center;
+
+ }
+
+ .hero-container img {
+     padding: 20px 25px;
+     flex: 1;
+     height: 600px;
+     width: 500px;
+     border-radius: 10px;
+     background: transparent;
+
+ }
+
+ .images {
+     background-color: transparent;
+     border-radius: 50px;
+ }
+
+ .theory {
+     flex: 1;
+     margin-top: 100px;
+     padding: 25px;
+    
+ }
+
+ .Profile-btn {
+     padding: 15px;
+     height: 70px;
+     width: 200px;
+     border-radius: 15px;
+     background: #ffffff;
+     color: #000000;
+     font-weight: 700;
+     text-decoration: none;
+ }
+
+ .Profile-btn:hover {
+     background: #b7b7b7;
+
+ }
+
+ .images {
+     border-radius: 10px;
+ }
+
+
+ .hero-container h3 {
+     font-size: 60px;
+     font-weight: 600;
+     color: rgba(255, 255, 255);
+     padding-bottom: 20px;
+
+ }
+
+ .hero-container p {
+     font-size: 22px;
+     padding: 20px 20px;
+     text-align: left;
+     justify-content: left;
+    
+     border-radius: 30px;
+     border: #e4e4e4;
+     color: rgb(238, 238, 238);
+ }
+
+
+ /* about section  */
+
+ .About {
+     width: 80vw;
+     height: 95vh;
+     margin: 10vw;
+     
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 80px;
+     background: linear-gradient(90deg, #0f0f0f, #070707);
+     border: 5px solid #ebebeb;
+     border-radius: 30px;
+ }
+
+ .about-img img {
+     height: 500px;
+     width: 500px;
+     flex: 1;
+ }
+
+ .about-text {
+     padding-left: 50px;
+     justify-content: start;
+     text-align: center;
+     font-size: 30px;
+     color: #ebebeb;
+ }
+
+
+
+ /* Review section */
+
+ .reviews {
+     padding: 60px;
+     
+ }
+
+ .reviews h1 {
+     color: #f8f6f6;
+     font-size: 70px;
+     padding-bottom: 40px;
+   
+
+ }
+.reviews-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+ .review-container {
+    width: 40vw;
+    height: 70vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 50px;
+     padding: 20px;
+     padding-bottom: 40px;
+     background: linear-gradient(90deg, #151515, #000000);
+     border: 5px solid #ebebeb;
+     border-radius: 25px;
+ }
+
+ .review-container p {
+     padding: 10px 10px;
+     font-size: 20px;
+     text-align: left;
+     justify-content: baseline;
+     color: #ffffffcf;
+     
+ }
+
+
+
+
+ .review-logo img {
+     width: 150px;
+     height: 150px;
+     
+    border-radius: 20px;
+ }
+
+ .review-logo h4 {
+     font-size: 25px;
+     padding-top: 10px;
+     color: rgb(239, 234, 234);
+ }
+
+
+
+ /* newsletter-section */
+
+ .newsletter-section {
+     background: linear-gradient(90deg, #151515, #000000);
+     width: 100%;
+     text-align: center;
+     justify-content: center;
+     padding-bottom: 150px;
+     border-top: 6px solid rgba(31, 31, 31, 0.443);
+     padding: 40px 20px;
+
+ }
+
+ .newsletter-section h1 {
+     color: #f0eaea;
+     font-size: 40px;
+     text-decoration: underline;
+     padding-bottom: 30px;
+ }
+
+ .newsletter input {
+     height: 40px;
+     width: 350px;
+     padding: 10px;
+     border-radius: 10px;
+     background-color: #e7d7fe;
+     color: black;
+ }
+
+ .newsletter button {
+     height: 40px;
+     width: 100px;
+     border-radius: 15px;
+     background: #ffffff;
+     color: rgb(0, 0, 0);
+     font-weight: 700;
+ }
+
+ .newsletter button:hover {
+     background: #cacaca;
+     color: rgb(0, 0, 0);
+ }
+
+ .footer {
+
+     background: linear-gradient(90deg, #151515, #000000);
+     padding: 60px 20px;
+
+ }
+
+ .footer .logo {
+     padding: 0px 0px 40px 60px;
+ }
+
+ .footer .logo h2 {
+
+     font-size: 40px;
+
+ }
+
+ .footer-links {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .quick-links {
+     margin-left: 100px;
+     text-align: center;
+ }
+
+ .quick-links p {
+     font-size: 35px;
+     padding-top: 20px;
+     padding-left: 0px;
+     color: rgb(211, 211, 211);
+ }
+
+
+
+ .linkss {
+     padding-top: 10px;
+     display: inline-block;
+     text-align: center;
+     justify-content: space-between;
+
+ }
+
+ .linkss a {
+     font-size: 25px;
+     padding: 10px;
+     color: #d9d9d9;
+     text-shadow: #000000;
+     text-decoration: none;
+
+ }
+
+ .legal {
+     padding-top: 20px;
+     text-align: center;
+     margin-right: 150px;
+ }
+
+ .legal h3 {
+     font-size: 35px;
+     color: #d9d9d9;
+     padding-bottom: 20px;
+ }
+
+ .legal a {
+     font-size: 20px;
+     padding: 0px 10px;
+     color: #d9d9d9;
+     text-decoration: none;
+ }
+
+ .contact {
+     padding: 50px;
+     margin-left: 60px;
+ }
+
+ .contact h3 {
+     color: #d9d9d9;
+     font-size: 35px;
+     text-align: center;
+     padding-bottom: 10px;
+
+ }
+
+ .contact h4 {
+     font-size: 25px;
+     color: #d9d9d9;
+     text-align: center;
+ }
+
+ .phone-number a {
+     text-decoration: none;
+     color: #9a92ff;
+ }
+
+ .email {
+     padding-top: 15px;
+ }
+
+ .email a {
+     font-size: 20px;
+     text-decoration: none;
+     color: #fff;
+
+ }
+
+ .copyright {
+     text-align: center;
+ }
+
+ .copyright p {
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     color: #fff;
+ }
+
+
+ /* scroll bar  */
+
+ ::-webkit-scrollbar {
+     width: 15px;
+
+ }
+
+
+ ::-webkit-scrollbar-track {
+     background: #000000;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: rgb(227, 227, 227);
+ }
+
+
+ /* responsivness  */
+
+ @media screen and (max-width:1280px) {
+
+     .About {
+         flex-direction: column;
+
+         padding: 50px;
+     }
+
+     .Profile-btn {
+         font-size: 25px;
+     }
+
+     .About {
+         flex-direction: column;
+         text-align: center;
+         padding: 50px;
+     }
+
+     .superheros {
+         background-size: cover;
+     }
+
+ }
+
+ @media screen and (max-width: 768px) {
+     /* Adjustments for tablets */
+
+     .navbar {
+         flex-direction: column;
+         padding: 10px 15px;
+     }
+
+     .nav-element a {
+         padding: 10px;
+         font-size: 16px;
+     }
+
+     .home {
+         flex-direction: column;
+     }
+
+     .iron-man img {
+         width: 80%;
+         height: auto;
+         margin: 20px 80px;
+     }
+
+     .intro h1 {
+         font-size: 40px;
+     }
+
+     .intro p {
+         font-size: 18px;
+         padding: 20px 0;
+     }
+
+     .superheros {
+         background-size: cover;
+     }
+
+     .superheros h2 {
+         font-size: 50px;
+     }
+
+     .hero-container {
+         flex-direction: column;
+     }
+
+     .hero-container img {
+         width: 60%;
+         height: auto;
+     }
+
+     .batmanimg .capimg {
+         order: 1;
+     }
+
+     .theory {
+         order: 2;
+     }
+
+     .hero-container h3 {
+         font-size: 45px;
+     }
+
+     .Profile-btn {
+         font-size: 20px;
+     }
+
+
+     .about {
+         flex-direction: column;
+     }
+
+     .hero-container p {
+         font-size: 18px;
+         padding: 15px;
+     }
+
+     .about-img img {
+         width: 80%;
+         height: auto;
+     }
+
+     .About {
+         flex-direction: column;
+         text-align: center;
+         padding: 50px;
+     }
+
+
+     .about-text {
+         font-size: 24px;
+     }
+
+     .reviews h1 {
+         font-size: 50px;
+     }
+
+     .review-container p {
+         font-size: 18px;
+         text-align: center;
+         padding: 15px;
+     }
+
+     .review-logo img {
+         width: 120px;
+         height: 120px;
+     }
+
+     .review-logo h4 {
+         font-size: 20px;
+     }
+
+     .newsletter-section h1 {
+         font-size: 30px;
+     }
+
+     .newsletter input {
+         width: 80%;
+     }
+
+     .newsletter button {
+         width: 80px;
+     }
+
+     .footer h2 {
+         font-size: 30px;
+     }
+
+     .quick-links p {
+         font-size: 28px;
+     }
+
+     .legal h3,
+     .contact h3 {
+         font-size: 28px;
+     }
+
+     .contact h4 {
+         font-size: 22px;
+     }
+ }
+
+
+ @media screen and (max-width: 500px) {
+     /* Adjustments for phones */
+
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 10px 15px;
+     }
+
+     .nav-element a {
+         padding: 8px;
+         font-size: 14px;
+     }
+
+     .home {
+         flex-direction: column;
+         padding: 20px;
+     }
+
+     .iron-man img {
+         width: 100%;
+         height: auto;
+
+     }
+
+     .intro {
+         margin: 40px 20px;
+     }
+
+     .intro h1 {
+         font-size: 30px;
+     }
+
+     .intro p {
+         font-size: 16px;
+         padding: 20px 0;
+     }
+
+     .superheros {
+         background-size: cover;
+
+     }
+
+     .superheros h2 {
+         font-size: 40px;
+     }
+
+     .hero-container {
+         flex-direction: column;
+         margin: 10px 0;
+     }
+
+     .Profile-btn {
+         font-size: 15px;
+     }
+
+     .hero-container img {
+         width: 100%;
+         height: auto;
+     }
+
+     .batmanimg .capimg {
+         order: 1;
+     }
+
+     .theory {
+         order: 2;
+     }
+
+     .hero-container h3 {
+         font-size: 30px;
+     }
+
+     .hero-container p {
+         font-size: 16px;
+         padding: 10px;
+     }
+
+     .About {
+         flex-direction: column;
+         text-align: center;
+         padding: 50px;
+     }
+
+     .about-img img {
+         width: 100%;
+         height: auto;
+         margin: 0;
+     }
+
+     .about-text {
+         font-size: 20px;
+     }
+
+     .reviews h1 {
+         font-size: 40px;
+     }
+
+     .review-container {
+         flex-direction: column;
+     }
+
+     .review-container p {
+         font-size: 16px;
+         padding: 10px;
+     }
+
+     .review-logo img {
+         width: 100px;
+         height: 100px;
+     }
+
+     .review-logo h4 {
+         font-size: 18px;
+     }
+
+     .newsletter-section h1 {
+         font-size: 25px;
+     }
+
+     .newsletter input {
+         width: 90%;
+     }
+
+     .newsletter button {
+         width: 70px;
+     }
+
+     .footer h2 {
+         font-size: 25px;
+     }
+
+     .quick-links p {
+         font-size: 22px;
+     }
+
+     .legal h3,
+     .contact h3 {
+         font-size: 24px;
+     }
+
+     .contact h4 {
+         font-size: 20px;
+     }
+
+     .copyright p {
+         font-size: 16px;
+     }
+ }
+
+
+ @media screen and (max-width: 420px) {
+
+     /* Navigation bar */
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 10px 15px;
+     }
+
+     .nav-element a {
+         padding: 8px;
+         font-size: 14px;
+     }
+
+     /* Home Section */
+     .home {
+         flex-direction: column;
+         padding: 10px;
+     }
+
+     .iron-man img {
+         width: 100%;
+         height: auto;
+         margin: 10px 0;
+     }
+
+     .intro {
+         margin: 20px 10px;
+     }
+
+     .intro h1 {
+         font-size: 28px;
+     }
+
+     .intro p {
+         font-size: 14px;
+         padding: 15px 0;
+     }
+
+     /* Superhero Section */
+     .superheros {
+         background-size: cover;
+     }
+
+     .superheros h2 {
+         font-size: 30px;
+     }
+
+     .hero-container {
+         flex-direction: column;
+         margin: 10px 0;
+     }
+
+     .Profile-btn {
+         font-size: 14px;
+     }
+
+     .hero-container img {
+         width: 100%;
+         height: auto;
+     }
+
+     .hero-container h3 {
+         font-size: 28px;
+     }
+
+     .hero-container p {
+         font-size: 14px;
+         padding: 10px;
+     }
+
+     /* About Section */
+     .About {
+         flex-direction: column;
+         text-align: center;
+         padding: 30px;
+     }
+
+     .about-img img {
+         width: 100%;
+         height: auto;
+         margin: 0;
+     }
+
+     .about-text {
+         font-size: 18px;
+     }
+
+     /* Review Section */
+     .reviews h1 {
+         font-size: 30px;
+     }
+
+     .review-container {
+         flex-direction: column;
+         margin: 10px 0;
+     }
+
+     .review-container p {
+         font-size: 14px;
+         padding: 10px;
+     }
+
+     .review-logo img {
+         width: 80px;
+         height: 80px;
+     }
+
+     .review-logo h4 {
+         font-size: 16px;
+     }
+
+     /* Newsletter Section */
+     .newsletter-section h1 {
+         font-size: 20px;
+     }
+
+     .newsletter input {
+         width: 90%;
+     }
+
+     .newsletter button {
+         width: 60px;
+     }
+
+     /* Footer */
+     .footer h2 {
+         font-size: 20px;
+     }
+
+     .quick-links p {
+         font-size: 18px;
+     }
+
+     .legal h3,
+     .contact h3 {
+         font-size: 20px;
+     }
+
+     .contact h4 {
+         font-size: 18px;
+     }
+
+     .copyright p {
+         font-size: 14px;
+     }
+ }
+
+
+ #addform {
+     background-color: #432e7a80;
+     border-radius: 10px;
+ }
+
+ #addform:hover {
+     background-color: #432e7a;
+ }
+
+
+
+ body {
+     overflow-x: hidden;
+ }
+
+ #addform{
+    background-color: transparent;
+    color: rgb(1, 255, 137);
+ }
